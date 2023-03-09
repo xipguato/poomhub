@@ -1,0 +1,48 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("POOM HUB Update1", "Synapse")
+
+
+-- KIDNAP PLAYER
+
+local Tab = Window:NewTab("King legacy")
+local Section = Tab:NewSection("Kidnap player")
+
+
+Section:NewButton("Chinese", "Work for synaspe x", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xipguato/kinglegacy/main/Oneshotplayer"))()
+end)
+
+-- bring player old kidnap
+Section:NewButton("GhostPlayer", "BRing player", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Player%20Gui"))()
+end)
+
+--teleport
+Section:NewButton("Teleport island", "TP NOT FIX", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/kinglegacy.lua"))()
+end)
+
+--Bring ALl Player
+local Section = Tab:NewSection("Need Many Tool")
+
+Section:NewButton("ButtonText", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/DigitalityScripts/roblox-scripts/main/Bring%20All"))()
+end)
+
+-- another
+
+local Tab = Window:NewTab("toolstoolsfunction")
+local toolstoolsfunctionSection = Tab:NewSection("toolstoolsfunctionSection")
+
+--fly
+Section:NewButton("fly", "fly", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/dcL2CpKN"))()
+end)
+
+--long leg
+Section:NewButton("long leg", "show god", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/DigitalityScripts/roblox-scripts/main/Leg%20Resize"))()
+end)
+Section:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
